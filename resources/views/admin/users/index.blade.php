@@ -7,7 +7,7 @@
                 {{ trans('global.add') }} {{ trans('cruds.user.title_singular') }}
             </a>
             <a class="btn btn-success" href="{{ route("admin.users.create") }}?student">
-                {{ trans('global.add') }} New Student
+                {{ trans('global.add') }} 新學生
             </a>
         </div>
     </div>
