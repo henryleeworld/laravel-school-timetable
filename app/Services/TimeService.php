@@ -10,6 +10,7 @@ class TimeService
     {
         $time = Carbon::parse($from);
         $timeRange = [];
+
         do 
         {
             array_push($timeRange, [
