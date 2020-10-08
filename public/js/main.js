@@ -1,13 +1,13 @@
 $(document).ready(function () {
   window._token = $('meta[name="csrf-token"]').attr('content')
 
-  moment.updateLocale('zh-TW', {
+  moment.updateLocale('en', {
     week: {dow: 1} // Monday is the first day of the week
   })
 
   $('.date').datetimepicker({
     format: 'YYYY-MM-DD',
-    locale: 'zh-TW',
+    locale: 'en',
     icons: {
       up: 'fas fa-chevron-up',
       down: 'fas fa-chevron-down',
@@ -18,7 +18,7 @@ $(document).ready(function () {
 
   $('.datetime').datetimepicker({
     format: 'YYYY-MM-DD HH:mm:ss',
-    locale: 'zh-TW',
+    locale: 'en',
     sideBySide: true,
     icons: {
       up: 'fas fa-chevron-up',
@@ -30,17 +30,6 @@ $(document).ready(function () {
 
   $('.timepicker').datetimepicker({
     format: 'HH:mm:ss',
-    icons: {
-      up: 'fas fa-chevron-up',
-      down: 'fas fa-chevron-down',
-      previous: 'fas fa-chevron-left',
-      next: 'fas fa-chevron-right'
-    }
-  })
-
-  $('.lesson-timepicker').datetimepicker({
-    format: 'HH:mm',
-    stepping: 30,
     icons: {
       up: 'fas fa-chevron-up',
       down: 'fas fa-chevron-down',
@@ -72,5 +61,11 @@ $(document).ready(function () {
     if (shouldExpand) {
       $(this).addClass('active')
     }
+  })
+
+$('button.sidebar-toggler').click(function () {
+    setTimeout(function() {
+      $($.fn.dataTable.tables(true)).DataTable().columns.adjust();
+    }, 275);
   })
 })

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Lesson;
+use App\Models\Lesson;
 use App\Services\CalendarService;
 
 class CalendarController extends Controller
@@ -12,7 +12,6 @@ class CalendarController extends Controller
     {
         $weekDays     = Lesson::WEEK_DAYS;
         $calendarData = $calendarService->generateCalendarData($weekDays);
-
         return view('admin.calendar', compact('weekDays', 'calendarData'));
     }
 }

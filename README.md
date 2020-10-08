@@ -1,6 +1,6 @@
-# Laravel 7 學校時間表
+# Laravel 8 學校時間表
 
-讓每週課程時間表保持最新。輸入時間表的開始時間和時間間隔，就會自動建立時段。Laravel 7 學校時間表主要是用的 [QuickAdminPanel](https://quickadminpanel.com) 生成的，除了一些定制代碼，可依需求彈性改造的工具。
+讓每週課程時間表保持最新。輸入時間表的開始時間和時間間隔，就會自動建立時段。Laravel 8 學校時間表主要是用的 [QuickAdminPanel](https://quickadminpanel.com) 生成的，除了一些定制代碼，可依需求彈性改造的工具。
 
 ## 使用方式
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
@@ -12,7 +12,7 @@ $ git clone
 ```sh
 $ composer install
 ```
-- 產⽣ Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
+- 產生 Laravel 要使用的一組 32 字元長度的隨機字串 APP_KEY 並存在 .env 內。
 ```sh
 $ php artisan key:generate
 ```
@@ -26,11 +26,11 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/DhsLEq1.png)
+![](https://i.imgur.com/C5Ml7qq.png)
 > 進行所有學校班級的管理
 
-![](https://i.imgur.com/hbOhQcz.png)
+![](https://i.imgur.com/UQnClmC.png)
 > 進行所有課程的管理
 
-![](https://i.imgur.com/Nw91HLY.png)
+![](https://i.imgur.com/YlJbjKO.png)
 > 因選課期間上課教室及上課時段仍有可能異動，煩請在正式上課前再進行最後的確認，以免影響自己的權益

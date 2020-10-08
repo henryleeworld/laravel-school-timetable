@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Lesson;
+use App\Models\Lesson;
 use App\Rules\LessonTimeAvailabilityRule;
 use Gate;
 use Illuminate\Foundation\Http\FormRequest;

@@ -2,7 +2,7 @@
 
 namespace App\Rules;
 
-use App\Lesson;
+use App\Models\Lesson;
 use Illuminate\Contracts\Validation\Rule;
 
 class LessonTimeAvailabilityRule implements Rule
