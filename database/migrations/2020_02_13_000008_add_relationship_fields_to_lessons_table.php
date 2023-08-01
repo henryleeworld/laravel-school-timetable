@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddRelationshipFieldsToLessonsTable extends Migration
+return new class extends Migration
 {
     public function up()
     {
@@ -15,4 +15,4 @@ class AddRelationshipFieldsToLessonsTable extends Migration
             $table->foreign('class_id', 'class_fk_1001508')->references('id')->on('school_classes');
         });
     }
-}
+};
