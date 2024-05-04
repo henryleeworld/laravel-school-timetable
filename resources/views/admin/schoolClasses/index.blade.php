@@ -29,7 +29,7 @@
                             {{ trans('cruds.schoolClass.fields.name') }}
                         </th>
                         <th>
-                            Schedule
+                            {{ trans('cruds.schoolClass.fields.schedule') }}
                         </th>
                         <th>
                             &nbsp;
@@ -49,7 +49,7 @@
                                 {{ $schoolClass->name ?? '' }}
                             </td>
                             <td>
-                                <a href="{{ route('admin.calendar.index') }}?class_id={{ $schoolClass->id }}">View Schedule</a>
+                                <a href="{{ route('admin.calendar.index') }}?class_id={{ $schoolClass->id }}">{{ trans('cruds.schoolClass.fields.view_schedule') }}</a>
                             </td>
                             <td>
                                 @can('school_class_show')

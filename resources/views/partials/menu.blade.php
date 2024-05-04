@@ -58,7 +58,7 @@
                                 <i class="fa-fw fas fa-user c-sidebar-nav-icon">
 
                                 </i>
-                                老師
+                                {{ trans('cruds.teacher.title') }}
                             </a>
                         </li>
                         <li class="c-sidebar-nav-item">
@@ -66,7 +66,7 @@
                                 <i class="fa-fw fas fa-user c-sidebar-nav-icon">
 
                                 </i>
-                                學生
+                                {{ trans('cruds.student.title') }}
                             </a>
                         </li>
                     @endcan
@@ -98,7 +98,7 @@
                 <i class="fa-fw fas fa-calendar c-sidebar-nav-icon">
 
                 </i>
-                日曆
+                {{ trans('cruds.calendar.title') }}
             </a>
         </li>
         <li class="c-sidebar-nav-item">

@@ -67,6 +67,14 @@ return [
             'deleted_at_helper'        => '',
         ],
     ],
+    'teacher'           => [
+        'title'          => 'Teachers',
+        'title_singular' => 'Teacher',
+    ],
+    'student'           => [
+        'title'          => 'Students',
+        'title_singular' => 'Student',
+    ],
     'lesson'         => [
         'title'          => 'Lessons',
         'title_singular' => 'Lesson',
@@ -105,6 +113,18 @@ return [
             'updated_at_helper' => '',
             'deleted_at'        => 'Deleted at',
             'deleted_at_helper' => '',
+            'schedule'          => 'Schedule',
+            'schedule_helper'   => '',
+            'view_schedule'     => 'View Schedule',
+        ],
+    ],
+    'calendar'           => [
+        'title'          => 'Calendars',
+        'title_singular' => 'Calendar',
+        'fields'         => [
+            'time'        => 'Time',
+            'time_helper' => '',
+            'teacher'     => 'Teacher',
         ],
     ],
 ];

@@ -9,7 +9,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('lessons', function (Blueprint $table) {
-            $table->increments('id');
+            $table->id();
             $table->integer('weekday');
             $table->time('start_time');
             $table->time('end_time');

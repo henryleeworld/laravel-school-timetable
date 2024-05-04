@@ -67,6 +67,14 @@ return [
             'deleted_at_helper'        => '',
         ],
     ],
+    'teacher'           => [
+        'title'          => '老師',
+        'title_singular' => '老師',
+    ],
+    'student'           => [
+        'title'          => '學生',
+        'title_singular' => '學生',
+    ],
     'lesson'         => [
         'title'          => '課程',
         'title_singular' => '課程',
@@ -105,6 +113,18 @@ return [
             'updated_at_helper' => '',
             'deleted_at'        => '刪除時間',
             'deleted_at_helper' => '',
+            'schedule'          => '行程表',
+            'schedule_helper'   => '',
+            'view_schedule'     => '瀏覽行程表',
+        ],
+    ],
+    'calendar'           => [
+        'title'          => '日曆',
+        'title_singular' => '日曆',
+        'fields'         => [
+            'time'        => '時間',
+            'time_helper' => '',
+            'teacher'     => '老師',
         ],
     ],
 ];

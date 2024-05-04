@@ -5,7 +5,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    日曆
+                    {{ trans('cruds.calendar.title') }}
                 </div>
 
                 <div class="card-body">
@@ -17,7 +17,7 @@
 
                     <table class="table table-bordered">
                         <thead>
-                            <th width="125">Time</th>
+                            <th width="125">{{ trans('cruds.calendar.fields.time') }}</th>
                             @foreach($weekDays as $day)
                                 <th>{{ $day }}</th>
                             @endforeach
@@ -32,7 +32,7 @@
                                         @if (is_array($value))
                                             <td rowspan="{{ $value['rowspan'] }}" class="align-middle text-center" style="background-color:#f0f0f0">
                                                 {{ $value['class_name'] }}<br>
-                                                Teacher: {{ $value['teacher_name'] }}
+                                                {{ trans('cruds.calendar.fields.teacher') }}: {{ $value['teacher_name'] }}
                                             </td>
                                         @elseif ($value === 1)
                                             <td></td>

@@ -1,8 +1,9 @@
-# Laravel 9 學校時間表
+# Laravel 10 學校時間表
 
 讓每週課程時間表保持最新。輸入時間表的開始時間和時間間隔，就會自動建立時段。
 
 ## 使用方式
+- 打開 php.ini 檔案，啟用 PHP 擴充模組 sodium，並重啟服務器。
 - 把整個專案複製一份到你的電腦裡，這裡指的「內容」不是只有檔案，而是指所有整個專案的歷史紀錄、分支、標籤等內容都會複製一份下來。
 ```sh
 $ git clone
@@ -20,17 +21,25 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate --seed
 ```
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
+```sh
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/login` 來進行登入，預設的管理者電子郵件和密碼分別為 __admin@admin.com__ 和 __password__ ；預設的老師電子郵件和密碼分別為 __teacher@teacher.com__ 和 __password__ ；預設的學生電子郵件和密碼分別為 __student@student.com__ 和 __password__ 。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/C5Ml7qq.png)
+![](https://i.imgur.com/jKE0DaP.png)
 > 進行所有學校班級的管理
 
-![](https://i.imgur.com/UQnClmC.png)
+![](https://i.imgur.com/v2Z6EBA.png)
 > 進行所有課程的管理
 
-![](https://i.imgur.com/YlJbjKO.png)
+![](https://i.imgur.com/KQZJq0J.png)
 > 因選課期間上課教室及上課時段仍有可能異動，煩請在正式上課前再進行最後的確認，以免影響自己的權益
